@@ -4,13 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        if (args[0] == null || args[0] == "") {
+        if (args.length == 0 ) {
             throw new IllegalArgumentException("Please provide root URL!");
         }
         Crawler crawler = new Crawler();
+        String rootUrl = args[0];
 
-        System.out.println("**** visiting ****");
-        Sitemap sitemap = crawler.getSitemap("http://ciziunas.pro");
+        System.out.println(String.format("**** visiting %s ****", rootUrl));
+        Sitemap sitemap = crawler.getSitemap(rootUrl);
         System.out.println("**** visiting finished ****");
 
         System.out.println("**** printing ****");
