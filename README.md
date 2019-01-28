@@ -1,10 +1,10 @@
 # Ciziunas's web crawler
 
-##Project
+## Project
 
  Ciziunas's web crawler is an application to get a sitemap of root URL provided. Application ignores external links and only crawls within the domain. Consequently, output is printed to console.
  
- ##Get started
+ ## Get started
  
  ### Prerequisites
 In order to build and run application prerequisites are:
