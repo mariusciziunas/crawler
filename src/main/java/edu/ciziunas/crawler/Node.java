@@ -19,4 +19,8 @@ public class Node {
     public void addChild(Node node) {
         children.add(node);
     }
+
+    public String getUrl() {
+        return url;
+    }
 }
